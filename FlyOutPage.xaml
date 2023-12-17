@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="FlyOutPage.FlyOutPage"
+            Title="FlyOutPage">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Flyout submenu" BackgroundColor="Gray">
+            <ScrollView>
+                <StackLayout>
+                    <Frame HeightRequest="140"  
+                           WidthRequest="140"  
+                           CornerRadius="70"  
+                           HorizontalOptions="Center"  
+                           IsClippedToBounds="True"  
+                           Padding="0"  
+                           BorderColor="Gray"  
+                           Margin="0,5,0,5">
+                        <Image Source="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/230ac8d3-54fe-47f6-8c5a-8e7e383080df/dfsiqx0-c003e8e9-c6cd-4828-80c9-14e64e2fcc85.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIzMGFjOGQzLTU0ZmUtNDdmNi04YzVhLThlN2UzODMwODBkZlwvZGZzaXF4MC1jMDAzZThlOS1jNmNkLTQ4MjgtODBjOS0xNGU2NGUyZmNjODUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zZpi5IVvYsq5hEBJCF4Rnpcbi0pAnX437dwnIU2DCII"
+                               Aspect="AspectFit"
+                               HeightRequest="140"
+                               WidthRequest="140"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+                    </Frame>
+
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="Jedi Cat" FontAttributes="Bold" FontSize="30" TextColor="White" />
+                        <Label Text="+3857348563486" FontAttributes="Italic" FontSize="20" TextColor="DarkViolet" />
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="Center" Margin="5">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="/Resources/Images/group.png"/>
+                            <Label Text="Create a group" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="/Resources/Images/contacts.png" />
+                            <Label Text="Contacts" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="/Resources/Images/calls.png" />
+                            <Label Text="Calls" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="/Resources/Images/people.png" />
+                            <Label Text="People around" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="/Resources/Images/favorite.png" />
+                            <Label Text="Favorite" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="/Resources/Images/settings.png" />
+                            <Label Text="Settings" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <Button Text="Invite friends" Margin="5" VerticalOptions="Center"/>
+                    <Button Text="Help" Margin="5" VerticalOptions="Center"/>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <ContentPage>
+            <Label Text="Swipe to the left!" FontAttributes="Bold" FontSize="72" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" />
+        </ContentPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
